@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.cortex/
+.swarm/
+.accept-fixture/
+.accept-trivial/
+*.log
+.env
+.env.*
+!.env.example
+coverage/
+.DS_Store
+*.tgz

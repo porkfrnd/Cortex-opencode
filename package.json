@@ -1,0 +1,46 @@
+{
+  "name": "cortex-opencode",
+  "version": "1.0.0",
+  "description": "Cortex — autonomous execution mode for OpenCode: goal graphs, dynamic workforce, adversarial Gauntlet verification, evidence-based completion, local-first memory.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cortex": "bin/cortex.mjs",
+    "cortex-setup": "scripts/setup.mjs"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "scripts/setup.mjs",
+    "assets/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "setup": "node scripts/setup.mjs"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "agents",
+    "orchestration",
+    "autonomous"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.18.31"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
