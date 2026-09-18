@@ -56,7 +56,7 @@ REMEDIATE → VERIFY → LEARN → DONE
 Prerequisites: OpenCode ≥ 1.x, Node ≥ 18.
 
 ```bash
-npm install cortex-opencode
+npm install github:porkfrnd/Cortex-opencode
 ```
 
 Then register the plugin in `opencode.json` / `opencode.jsonc`:
@@ -69,8 +69,10 @@ And install the agent + commands into your project:
 
 ```bash
 npx cortex-setup
-# or: node node_modules/cortex-opencode/scripts/setup.mjs
 ```
+
+(When `cortex-opencode` is published to the npm registry, plain
+`npm install cortex-opencode` will work the same way.)
 
 This writes `.opencode/agent/cortex.md` and `.opencode/commands/cortex*.md`
 (idempotent; won't overwrite your edits without `--force`).
