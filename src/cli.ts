@@ -2,7 +2,7 @@
  * Headless Cortex CLI — same controller, no model required for deterministic
  * stages. Used by tests, acceptance runs, and CI.
  */
-import { CortexController } from "../src/controller.js";
+import { CortexController } from "./controller.js";
 
 const root = process.cwd();
 const [cmd, ...rest] = process.argv.slice(2);
