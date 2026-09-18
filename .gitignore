@@ -4,6 +4,7 @@ dist/
 .swarm/
 .accept-fixture/
 .accept-trivial/
+.install-test/
 *.log
 .env
 .env.*
